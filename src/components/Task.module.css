@@ -1,0 +1,65 @@
+
+.task {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.75rem;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400, #333);
+  border-radius: 8px; 
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.task p {
+  line-height: 140%; 
+  font-size: 14px;
+  flex: 1 0 0;
+  word-break: break-word;
+}
+
+.unchecked p {
+  color: var(--gray-100);
+}
+
+.checked p {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+
+.task button {
+  background: transparent;
+
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.unchecked button:first-child {
+  color: var(--blue);
+}
+
+.unchecked button:first-child:hover {
+  color: var(--blueDark);
+}
+
+
+.checked button:first-child {
+  color: var(--purpleDark);
+}
+
+.checked button:first-child:hover {
+  color: var(--purple);
+}
+
+
+.deleteButton {
+  color: var(--gray-300);
+}
+
+.deleteButton:hover {
+  color: var(--danger);
+}
